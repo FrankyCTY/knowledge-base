@@ -18,8 +18,15 @@ Analyze the entire repository and generate a single `md file` with relevant nami
 
 4. **Special Notes & Comments**
 
-   - Extract any noteworthy code comments but note that `TODO`/`FIXME` annotations are my comment where I add them to help me understand the code base so it might have mistake.
-   - Explain how they relate to the flow or indicate design decisions or caveats.
+- Extract any noteworthy code comments, including `TODO`/`FIXME` annotations.
+- Distinguish comment prefixes:
+  - `USERNOTE`: personal notes added by the developer (may contain mistakes).
+  - `USERQ`: questions posed by the developer about the code.
+  - `LLM`: insights or clarifications added by the LLM.
+- For each extracted comment, explain:
+  - Its context within the flow.
+  - Whether it reflects a design decision, caveat, open question, or potential issue.
+  - How it should influence further investigation or implementation.
 
 5. **Entities**
 
